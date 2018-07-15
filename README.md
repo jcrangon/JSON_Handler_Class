@@ -2,16 +2,7 @@
 Makes it EASY to create JSON object and JSON records
 ```php
 <?php
-session_start();
-// Afficher les erreurs à l'écran
-ini_set('display_errors', 'On');
-// Enregistrer les erreurs dans un fichier de log
-ini_set('log_errors', "On");
-// Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
-ini_set('error_log', dirname(__FILE__).'/log.txt');
-// Afficher les erreurs et les avertissements
-error_reporting(E_ALL);
-	
+session_start();	
 require("./jsonHandler.php");
 
 $json=new jsonHandler;
